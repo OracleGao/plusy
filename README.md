@@ -1,2 +1,2 @@
 # plusy
- web site spider base on Scrapy
+ web spider base on Scrapy
