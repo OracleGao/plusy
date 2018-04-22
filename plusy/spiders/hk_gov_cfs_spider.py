@@ -14,6 +14,6 @@ class HkGovCfsSpider(scrapy.Spider):
             date = time.strptime(dateStr, '%d.%m.%Y')
             yield {
                 'timestamp': time.strftime("%Y-%m-%d", date),
-                'href': tr.css('a::attr(href)').extract_first(),
+                'href': 'http://www.cfs.gov.hk' + tr.css('a::attr(href)').extract_first(),
                 'text': tr.css('a::text').extract_first(),
             }
