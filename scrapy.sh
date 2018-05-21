@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-docker run -v $(pwd):/runtime/app aciobanu/scrapy $*
+docker run --rm -v $(pwd):/runtime/app aciobanu/scrapy $*
